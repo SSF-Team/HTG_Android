@@ -9,12 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="trans">#00000000</color>
 
-    <color name="main">#ffd11a</color>
-    <color name="font_on_main">#000</color>
-
-    <color name="bg">#fff</color>
-    <color name="bg_1">#f3f3f3</color>
-    <color name="bg_2">#e6e6e6</color>
-
-    <color name="font_f_1">#fff</color>
+    <color name="bg">#000</color>
+    <color name="bg_1">#2d2d2d</color>
+    <color name="bg_2">#1C1C1C</color>
+    <color name="main">#ffefaf</color>
 </resources>

@@ -1,4 +1,4 @@
-package com.chuhelan.htg.ui.dashboard;
+package com.chuhelan.htg.ui.mine;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,24 +10,22 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import com.chuhelan.htg.R;
-import com.chuhelan.htg.databinding.FragmentDashboardBinding;
 
-public class DashboardFragment extends Fragment {
+import com.chuhelan.htg.databinding.FragmentMineBinding;
 
-    private DashboardViewModel dashboardViewModel;
-private FragmentDashboardBinding binding;
+public class MineFragment extends Fragment {
+
+    private FragmentMineBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
             ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
-                new ViewModelProvider(this).get(DashboardViewModel.class);
+        MineViewModel mineViewModel = new ViewModelProvider(this).get(MineViewModel.class);
 
-    binding = FragmentDashboardBinding.inflate(inflater, container, false);
+    binding = FragmentMineBinding.inflate(inflater, container, false);
     View root = binding.getRoot();
 
-        final TextView textView = binding.textDashboard;
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView textView = binding.textNotifications;
+        mineViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

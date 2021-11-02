@@ -1,4 +1,4 @@
-package com.chuhelan.htg.ui.notifications;
+package com.chuhelan.htg.ui.orders;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,24 +10,22 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import com.chuhelan.htg.R;
-import com.chuhelan.htg.databinding.FragmentNotificationsBinding;
 
-public class NotificationsFragment extends Fragment {
+import com.chuhelan.htg.databinding.FragmentOrdersBinding;
 
-    private NotificationsViewModel notificationsViewModel;
-private FragmentNotificationsBinding binding;
+public class OrdersFragment extends Fragment {
+
+    private FragmentOrdersBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
             ViewGroup container, Bundle savedInstanceState) {
-        notificationsViewModel =
-                new ViewModelProvider(this).get(NotificationsViewModel.class);
+        OrdersViewModel ordersViewModel = new ViewModelProvider(this).get(OrdersViewModel.class);
 
-    binding = FragmentNotificationsBinding.inflate(inflater, container, false);
+    binding = FragmentOrdersBinding.inflate(inflater, container, false);
     View root = binding.getRoot();
 
-        final TextView textView = binding.textNotifications;
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView textView = binding.textDashboard;
+        ordersViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

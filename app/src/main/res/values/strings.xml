@@ -1,7 +1,18 @@
 <resources>
     <string name="app_name">HTG</string>
-    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_home">主页</string>
     <string name="title_home">主页</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_dashboard">运单</string>
+    <string name="title_notifications">我的</string>
+    <string name="text_search_order"> 搜索物流</string>
+    <string name="text_user_name_def">用户名</string>
+    <string name="text_vip_name">会员服务</string>
+    <string name="text_vip_center">会员中心</string>
+    <string name="text_vip_subtitle">暂时不知道放什么的 VIP 标语</string>
+    <string name="text_nav_msg">消息中心</string>
+    <string name="text_nav_check">每日签到</string>
+    <string name="text_nav_support">支持</string>
+    <string name="text_nav_box1">快捷服务</string>
+    <string name="text_fast_send">快速寄件</string>
+    <string name="text_fast_get_code">取件代码</string>
 </resources>

@@ -3,10 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/drawable-night/bg_round_input_with_border.xml" value="0.35989583333333336" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.35989583333333336" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/drawable/bg_main_card.xml" value="0.35989583333333336" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/drawable/bg_round_input.xml" value="0.32407407407407407" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/drawable/bg_round_input_with_border.xml" value="0.32407407407407407" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/drawable/bg_vip_button.xml" value="0.35989583333333336" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/drawable/bg_vip_card.xml" value="0.35989583333333336" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/drawable/color_cursor.xml" value="0.32407407407407407" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/drawable/ic_appbar_truck.xml" value="0.35989583333333336" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/drawable/ic_appbar_user.xml" value="0.35989583333333336" />
         <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.35435897435897434" />
-        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.35989583333333336" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.35989583333333336" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/drawable/ic_search.xml" value="0.32407407407407407" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/drawable/ic_truck_solid.xml" value="0.35989583333333336" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/drawable/nav_item_color_state.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/drawable/progress_indeterminate_horizontal.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/layout/activity_home.xml" value="0.3202247191011236" />
         <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/layout/activity_main.xml" value="0.1875" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/layout/activity_navigation_view_head.xml" value="0.34375" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/layout/fragment_mine.xml" value="0.34375" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/layout/nav_main_menu.xml" value="0.32916666666666666" />
         <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/menu/bottom_nav_menu.xml" value="0.34375" />
+        <entry key="..\:/Users/Stapxs/Desktop/HTG_Android/app/src/main/res/menu/nav_main_menu.xml" value="0.34375" />
       </map>
     </option>
   </component>
