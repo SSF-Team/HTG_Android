@@ -17,12 +17,10 @@ public class MineFragment extends Fragment {
 
     private FragmentMineBinding binding;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-            ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         MineViewModel mineViewModel = new ViewModelProvider(this).get(MineViewModel.class);
-
-    binding = FragmentMineBinding.inflate(inflater, container, false);
-    View root = binding.getRoot();
+        binding = FragmentMineBinding.inflate(inflater, container, false);
+        View root = binding.getRoot();
 
         final TextView textView = binding.textNotifications;
         mineViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
@@ -31,6 +29,7 @@ public class MineFragment extends Fragment {
                 textView.setText(s);
             }
         });
+
         return root;
     }
 

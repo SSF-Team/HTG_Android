@@ -10,6 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HTG_Android">
         <activity
+            android:name=".RegisterHowToActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterAvtivity"
+            android:label="注册"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="@string/login_page"></activity>
+        <activity
             android:name=".NavigationViewHead"
             android:exported="false" />
         <activity
@@ -18,13 +35,7 @@
             android:label="@string/title_activity_home" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
