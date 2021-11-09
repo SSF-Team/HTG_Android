@@ -4,28 +4,25 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/htg_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/htg_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HTG_Android">
+        <activity
+            android:name=".NotLoginActivity"
+            android:exported="false" />
         <activity
             android:name=".RegisterHowToActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterAvtivity"
-            android:label="注册"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"
+            android:label="注册" />
         <activity
             android:name=".LoginActivity"
             android:exported="true"
-            android:label="@string/login_page"></activity>
+            android:label="@string/login_page" />
         <activity
             android:name=".NavigationViewHead"
             android:exported="false" />
@@ -35,7 +32,13 @@
             android:label="@string/title_activity_home" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

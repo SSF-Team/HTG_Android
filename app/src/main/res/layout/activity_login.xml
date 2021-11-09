@@ -26,6 +26,7 @@
         android:layout_marginTop="@dimen/default_space"
         android:background="@drawable/bg_login_ipt"
         android:hint="电子邮件地址"
+        android:inputType="textEmailAddress"
         android:paddingLeft="@dimen/default_space_small"
         android:textSize="15sp"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
@@ -46,7 +47,7 @@
         tools:layout_editor_absoluteX="0dp" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/login_forgot_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/default_space_big"
@@ -64,10 +65,11 @@
         android:text="未注册账户？"
         android:textColor="#000"
         android:textSize="15sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/login_forgot_password"
         tools:layout_editor_absoluteX="15dp" />
 
     <TextView
+        android:id="@+id/login_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/default_space"
@@ -78,6 +80,7 @@
         tools:layout_editor_absoluteX="15dp" />
 
     <Button
+        android:id="@+id/login_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/default_space_small"

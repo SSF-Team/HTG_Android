@@ -63,7 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:text="使用 HTG Express 追踪和管理您的待收快件"
+                android:text="使用 HTG 追踪和管理您的待收快件"
                 android:textColor="#000"
                 android:textSize="15sp"
                 tools:ignore="MissingConstraints"
@@ -147,6 +147,7 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
+            android:id="@+id/register_how_to_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="登录"
@@ -158,6 +159,7 @@
 
 
     <Button
+        android:id="@+id/register_how_to_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/default_space_small"
