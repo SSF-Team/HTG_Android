@@ -19,18 +19,18 @@ public class OrdersFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
             ViewGroup container, Bundle savedInstanceState) {
-        OrdersViewModel ordersViewModel = new ViewModelProvider(this).get(OrdersViewModel.class);
+//        OrdersViewModel ordersViewModel = new ViewModelProvider(this).get(OrdersViewModel.class);
 
     binding = FragmentOrdersBinding.inflate(inflater, container, false);
     View root = binding.getRoot();
 
-        final TextView textView = binding.textDashboard;
-        ordersViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+//        final TextView textView = binding.textDashboard;
+//        ordersViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+//            @Override
+//            public void onChanged(@Nullable String s) {
+//                textView.setText(s);
+//            }
+//        });
         return root;
     }
 
