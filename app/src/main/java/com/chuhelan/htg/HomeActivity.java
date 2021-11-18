@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.chuhelan.htg.util.Capture;
+import com.chuhelan.htg.util.HttpUtils;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
@@ -53,12 +54,12 @@ public class HomeActivity extends BaseActivity {
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String searchUrl = "https://htg.chuhelan.com/order/get/" + search_edit;
-                try {
-                    JSONObject jsonObject = new JSONObject(searchUrl);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
+//                String searchUrl = HttpUtils.getJsonContent("https://htg.chuhelan.com/order/get/" + search_edit.getText());
+//                try {
+//                    JSONObject jsonObject = new JSONObject(searchUrl);
+//                } catch (JSONException e) {
+//                    e.printStackTrace();
+//                }
                 navigateTo(SearchOrder.class);
             }
         });
