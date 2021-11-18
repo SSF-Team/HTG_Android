@@ -15,6 +15,19 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    defaultConfig {
+        ndk {
+            // 设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86","x86_64"
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -43,6 +56,10 @@ dependencies {
     implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.0'
+    implementation files('libs\\BaiduLBS_Android.jar')
+    implementation files('libs\\protobuf-java-2.3.0-micro.jar')
+    implementation files('libs\\protobuf_gens-map.jar')
+    implementation files('libs\\javapoet-1.9.0.jar')
 //    compile 'com.google.zxing:core:3.3.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

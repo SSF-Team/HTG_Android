@@ -7,7 +7,7 @@
     tools:context=".NavigationViewHead">
 
     <ImageView
-        android:id="@+id/navbar_header"
+        android:id="@+id/navigation_user_profile"
         android:layout_width="30sp"
         android:layout_height="30sp"
         android:layout_marginStart="@dimen/default_space"
@@ -17,22 +17,22 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/navigation_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10sp"
         android:text="@string/text_user_name_def"
-        app:layout_constraintBottom_toBottomOf="@+id/navbar_header"
-        app:layout_constraintStart_toEndOf="@+id/navbar_header"
-        app:layout_constraintTop_toTopOf="@+id/navbar_header" />
+        app:layout_constraintBottom_toBottomOf="@+id/navigation_user_profile"
+        app:layout_constraintStart_toEndOf="@+id/navigation_user_profile"
+        app:layout_constraintTop_toTopOf="@+id/navigation_user_profile" />
 
     <ImageView
         android:layout_width="20sp"
         android:layout_height="20sp"
         android:layout_marginStart="10sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="@+id/navigation_user_profile"
+        app:layout_constraintStart_toEndOf="@+id/navigation_name"
+        app:layout_constraintTop_toTopOf="@+id/navigation_name"
         android:src="@drawable/ic_chevron_right"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -47,7 +47,7 @@
         android:minHeight="100sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/navbar_header">
+        app:layout_constraintTop_toBottomOf="@+id/navigation_user_profile">
 
         <TextView
             android:id="@+id/textView2"
@@ -102,7 +102,7 @@
             app:layout_constraintTop_toTopOf="@+id/textView2" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/navigation_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/default_space_small"
@@ -123,7 +123,7 @@
             android:background="#d8b013"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintTop_toBottomOf="@+id/navigation_title" />
 
         <TextView
             android:layout_width="match_parent"
@@ -183,7 +183,8 @@
             android:layout_width="wrap_content"
             android:layout_height="40sp"
             android:layout_marginEnd="50dp"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints">
 
             <ImageView
                 android:id="@+id/imageView6"

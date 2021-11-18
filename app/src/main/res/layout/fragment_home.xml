@@ -13,32 +13,32 @@
         tools:context=".ui.home.HomeFragment">
 
 
-        <LinearLayout
-            android:id="@+id/linearLayout2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="15dp"
-            tools:ignore="MissingConstraints">
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/linearLayout2"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:padding="15dp"-->
+        <!--            tools:ignore="MissingConstraints">-->
 
-            <ImageView
-                android:id="@+id/scan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/scanbg"
-                android:padding="3dp"
-                android:src="@drawable/ic_scan" />
+        <!--            <ImageView-->
+        <!--                android:id="@+id/scan"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:background="@drawable/scanbg"-->
+        <!--                android:padding="3dp"-->
+        <!--                android:src="@drawable/ic_scan" />-->
 
-            <EditText
-                android:id="@+id/edit_scan"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
-                android:background="#FEFEFE"
-                android:hint="输入13位的追踪号码"
-                android:paddingLeft="10dp" />
+        <!--            <EditText-->
+        <!--                android:id="@+id/edit_scan"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_marginLeft="15dp"-->
+        <!--                android:background="#FEFEFE"-->
+        <!--                android:hint="输入13位的追踪号码"-->
+        <!--                android:paddingLeft="10dp" />-->
 
-        </LinearLayout>
+        <!--        </LinearLayout>-->
 
         <ImageView
             android:id="@+id/imageView10"
@@ -67,6 +67,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/home_tourer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="访客"
@@ -90,6 +91,7 @@
                     android:textSize="18dp" />
 
                 <TextView
+                    android:id="@+id/home_line"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
@@ -138,8 +140,8 @@
                         android:layout_marginRight="80dp">
 
                         <ImageView
-                            android:layout_width="68dp"
-                            android:layout_height="68dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:src="@drawable/add_package" />
 
                     </TableRow>
@@ -167,8 +169,8 @@
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:layout_width="68dp"
-                            android:layout_height="68dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:src="@drawable/my_package" />
 
                     </TableRow>
@@ -206,8 +208,8 @@
                         android:layout_marginRight="80dp">
 
                         <ImageView
-                            android:layout_width="68dp"
-                            android:layout_height="68dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:src="@drawable/map_package" />
 
                     </TableRow>
@@ -235,8 +237,8 @@
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:layout_width="68dp"
-                            android:layout_height="68dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:src="@drawable/pay_package" />
 
                     </TableRow>

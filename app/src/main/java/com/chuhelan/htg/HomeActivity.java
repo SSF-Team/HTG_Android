@@ -1,15 +1,22 @@
 package com.chuhelan.htg;
 
 import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.chuhelan.htg.util.Capture;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
@@ -18,11 +25,19 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.chuhelan.htg.databinding.ActivityHomeBinding;
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class HomeActivity extends BaseActivity {
 
     private ActivityHomeBinding binding;
     private boolean isSideOpen = false;
+    private ImageView scan, search;
+    private EditText search_edit;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +45,33 @@ public class HomeActivity extends BaseActivity {
         binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         this.getSupportActionBar().hide();      // 隐藏标题栏
+
+        scan = findViewById(R.id.scan);
+        search_edit = findViewById(R.id.search_edit);
+        search = findViewById(R.id.search_order);
+
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String searchUrl = "https://htg.chuhelan.com/order/get/" + search_edit;
+                try {
+                    JSONObject jsonObject = new JSONObject(searchUrl);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                navigateTo(SearchOrder.class);
+            }
+        });
+
+        scan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                IntentIntegrator integrator = new IntentIntegrator(HomeActivity.this);
+                integrator.setOrientationLocked(true);
+                integrator.setCaptureActivity(Capture.class);
+                integrator.initiateScan();
+            }
+        });
 
         // Dock 栏切换逻辑
         BottomNavigationView navView = findViewById(R.id.nav_view);
@@ -88,4 +130,18 @@ public class HomeActivity extends BaseActivity {
             }
         });
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        // 跳转扫描页面返回扫描数据
+        IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
+        //  判断返回值是否为空
+        if (scanResult != null) {
+            //返回条形码数据
+            String result = scanResult.getContents();
+            Log.d("code", result);
+            search_edit.setText(result);
+        }
+    }
+
 }
